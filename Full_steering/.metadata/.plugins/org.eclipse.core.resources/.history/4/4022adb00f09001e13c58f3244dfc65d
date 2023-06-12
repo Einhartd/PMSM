@@ -1,0 +1,283 @@
+#include "DSP28x_Project.h"     // Device Headerfile and Examples Include File
+#include "funkcje.h"
+#include "stale.h"
+#define __BSD_VISIBLE
+#include "math.h"
+
+#include "enkoder.h"
+#include "nastawy.h"
+#include "modulator.h"
+#include "abc_2_dq.h"
+#include "dq_abc.h"
+#include "dq_2_alfabeta.h"
+#include "alfabeta_2_abc.h"
+#include "PI_antiwindup.h"
+
+
+#define phiOffset 0.434883565
+
+
+
+// Prototype statements for functions found within this file.
+__interrupt void adc_isr(void);
+
+int praca =0;  //0-STOP NAPED; 1-ZEZWOLENIE NA PRACE
+
+// wypelnienie PWM
+float d1=0;
+float d2=0;
+float d3=0;
+
+//Prady fazowe
+float iB=0.0;
+float iC=0.0;
+float iA =0.0;
+
+float PhiMech = 0.0;
+float PhiEl = 0.0;
+
+//nastawy regulatora pradu
+float TI = 1e38;
+float KR = 45.0;
+
+
+float w_zad = 100.0;
+
+//ogarnieczenia regulatorow
+float w_max  =140.0;
+float w_min  =-140.0;
+
+float i_max = 35;
+float i_min = -35;
+
+#define Ts 1e-4
+#define fsw 1e4
+
+float speed = 0.0;
+
+
+//próba odpalenia silnika
+float w_fake = 80.0;
+float alfa_fake = 0.0;
+
+float Ua = 0.0;
+float Ub = 0.0;
+float Uc = 0.0;
+
+//testy czesc kolejna
+float graph[200] ={0};
+int index = 0.0;
+int skip = 8;
+int skipValue = 100;
+int run = 0;
+
+
+//inicjalizacje struktur
+
+Enk enkoder;
+nastawy ns;
+ABC2DQ abc2dq;
+DQ2ABC dq2abc;
+DQ2ALFABETA dq2alfabeta;
+ALFABETA2ABC alfabeta2abc;
+mod modulator;   //modulator sygnalu PWM
+Antiwindup reg_rpm;     //regulator predkosci
+Antiwindup reg_id;      //regulator pradu iD
+Antiwindup reg_iq;      //regulator pradu iQ
+
+
+
+
+unsigned long long int AdcIntCounter=0;
+
+void main(void){
+   // Step 1. Initialize System Control:
+   InitSysCtrl();
+   // Step 2. Initialize GPIO:
+   InitPWMGpio();
+   EPwm_Control123(0);
+   InitEncGpio();
+
+   // Step 3. Clear all interrupts and initialize PIE vector table:
+   // Disable CPU interrupts
+   DINT;
+
+   // Initialize the PIE control registers to their default state.
+   InitPieCtrl();
+
+   // Disable CPU interrupts and clear all CPU interrupt flags:
+   IER = 0x0000;
+   IFR = 0x0000;
+
+   // Initialize the PIE vector table with pointers to the shell Interrupt
+   // Service Routines (ISR).
+   InitPieVectTable();
+
+   // Interrupts that are used in this example are re-mapped to
+   EALLOW;  // This is needed to write to EALLOW protected register
+   PieVectTable.ADCINT1 = &adc_isr;
+   EDIS;    // This is needed to disable write to EALLOW protected registers
+
+   // Step 4. Initialize all the Device Peripherals:
+   InitAdc();  // For this example, init the ADC
+   AdcOffsetSelfCal();
+
+   // Step 5. User specific code, enable interrupts:
+   PieCtrlRegs.PIEIER1.bit.INTx1 = 1;   // Enable INT 1.1 in the PIE
+   IER |= M_INT1;                       // Enable CPU Interrupt 1
+   EINT;                                // Enable Global interrupt INTM
+   ERTM;                                // Enable Global realtime interrupt DBGM
+
+   InitADCConv();
+   InitPWM();
+
+
+    //podanie arumentow do struktur
+
+   SpeedCalcInit(&enkoder, Ts);
+//   AntiwindupInit(&reg_rpm, ns.kr_omega, ns.Ti_omega, w_max, w_min);
+//   AntiwindupInit(&reg_iq, ns.kr_prad, ns.Ti_prad, i_max,i_min);
+//   AntiwindupInit(&reg_id, ns.kr_prad, ns.Ti_prad, i_max, i_min);
+
+   AntiwindupInit(&reg_rpm, 1.0, 1.0, w_max, w_min);
+   AntiwindupInit(&reg_iq, KR, TI, i_max,i_min);
+   AntiwindupInit(&reg_id, KR, TI, i_max, i_min);
+   
+   // Wait for ADC interrupt
+
+
+   while(1){
+	   __asm(" NOP");
+   }
+
+}
+
+__interrupt void  adc_isr(void)
+{
+	EPwm_Control123(praca);
+
+	//  Liczenie pradow
+	iB = AdcResult.ADCRESULT0 * (-0.008684) + 23.339994 + 0.246;
+	iC = AdcResult.ADCRESULT9 * (-0.00865)  + 23.339994 + 0.141;
+	iA = - (iB + iC);
+
+	// Wyznaczanie polozenia mechanicznego i pola
+	PhiMech = M_PI*2*(float)EncPos()/8192.0 - phiOffset;
+	if(PhiMech > 2* M_PI)
+	{
+	    PhiMech -= 2 * M_PI;
+	}
+    if(PhiMech <0 )
+    {
+        PhiMech += 2 * M_PI;
+    }
+    PhiEl = PhiMech * POLES_PAIRS;
+
+    /*
+    //  Do symulowania sztucznego sinusa
+    alfa_fake = alfa_fake + w_fake * Ts;
+    if(alfa_fake > 2*M_PI)
+    {
+        alfa_fake = alfa_fake - 2 * M_PI;
+    }
+    */
+
+
+
+	//Zabezpieczenie nadpradowe
+	if(praca){
+		if((fabs(iB)>3.0) || (fabs(iC)>3.0)){
+			praca=0;
+			EPwm_Control123(praca);
+            }
+	}
+	/*
+	if(praca == 0)
+	{
+	    AntiwindupInit(&reg_iq, 1, 1e38, i_max,i_min);
+	    AntiwindupInit(&reg_id, 1, 1e38, i_max, i_min);
+	}
+    */
+
+	//Sekcja wszystkich obliczen
+
+
+    //obliczenie predkosci z enkodera
+	SpeedCalc(&enkoder, PhiMech);
+	speed = enkoder.outputSpeed;
+
+
+    //transformacja z abc do dq z tego wyjda iQ i iD
+	TransABCToDQCalc(&abc2dq, iA, iB, iC, PhiEl);
+	//TransABCToDQCalc(&abc2dq, iA, iB, iC, alfa_fake);
+
+    //obliczenia regulatora predkosci obrotowej 
+    //AntiwindupCalc(&reg_rpm, w_zad, speed, Ts);
+
+    //obliczanie regulatora pradu w osi iD, zadane iD = 0
+    AntiwindupCalc(&reg_id, 0.0, abc2dq.y[0], Ts);
+
+    //obliczenie w regulatorze pradu iQ, jako wartosc zadana zostaje podane wyjscie z regulatora predkosci
+    AntiwindupCalc(&reg_iq, 1.0, abc2dq.y[1], Ts);
+
+    //transformacja do do ukladu trojfazowego uQ uD -> uA uB uC
+    TransformDqToABCCalc(&dq2abc, reg_id.y_sat, reg_iq.y_sat, PhiEl);
+
+    //obliczenia modulatora PWM 
+
+	//sztuczne napiecia
+	//Ua = 35*sin(alfa_fake);
+	//Ub = 35*sin(alfa_fake - 0.6666*M_PI);
+	//Uc = 35*sin(alfa_fake + 0.66666 * M_PI);
+	//TransformDqToABCCalc(&dq2abc, reg_id.y_sat, reg_iq.y_sat, PhiEl);
+
+	//modCalc(&modulator, Ua, Ub, Uc);
+
+
+	modCalc(&modulator, dq2abc.y[0], dq2abc.y[1], dq2abc.y[2]);
+
+
+	//  Grafy
+	if(run == 1)
+	{
+	    if(skip == 0)
+	    {
+	        graph[index] = abc2dq.y[1];
+	        index ++;
+	        if(index > 199)
+	        {
+	            index = 0;
+	            run = 0;
+	        }
+	        skip = skipValue;
+	    }
+	    skip--;
+	}
+
+
+    d1 = 0.02857 * modulator.y[0];
+    d2 = 0.02857 * modulator.y[1];
+    d3 = 0.02857 * modulator.y[2];
+
+    //koniec obliczen
+
+	if(d1 > 1){d1 = 1;}
+	if(d1 < -1){d1 = -1;}
+	if(d2 > 1){d2 = 1;}
+	if(d2 < -1){d2 = -1;}
+	if(d3 > 1){d3 = 1;}
+	if(d3 < -1){d3 = -1;}
+
+
+	EPwm1Regs.CMPA.half.CMPA =  d1 * (TB_PRD/2) + (TB_PRD/2);
+	EPwm2Regs.CMPA.half.CMPA =  d2 * (TB_PRD/2) + (TB_PRD/2);
+	EPwm3Regs.CMPA.half.CMPA =  d3 * (TB_PRD/2) + (TB_PRD/2);
+
+
+
+	AdcIntCounter++;
+
+	AdcRegs.ADCINTFLGCLR.bit.ADCINT1 = 1;     //Clear ADCINT1 flag reinitialize for next SOC
+	PieCtrlRegs.PIEACK.all = PIEACK_GROUP1;   // Acknowledge interrupt to PIE
+}
+

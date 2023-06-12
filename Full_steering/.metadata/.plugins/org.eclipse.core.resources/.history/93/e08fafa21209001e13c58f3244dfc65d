@@ -1,0 +1,71 @@
+/*
+ * PI_antiwindup.c
+ *
+ *  Created on: 22 maj 2023
+ *      Author: student
+ */
+#include "PI_antiwindup.h"
+#define __BSD_VISIBLE
+#include <math.h>
+
+void AntiwindupInit(Antiwindup *anti, float Kr, float Ti, float max, float min){
+    anti->u = 0;
+    anti->u_sprzeg = 0;
+    anti->u_suma = 0;
+    anti->u_prev = 0;
+    anti->y_int = 0;
+    anti->y_int_prev = 0;
+    anti->y_prop = 0;
+    anti->y_prev = 0;
+    anti->u_sat = 0;
+    anti->y_sat = 0;
+    anti->flag = 1;
+    anti->Kr = Kr;
+    anti->Ti = Ti;
+    anti->oneOverTi = 1.0 / anti-> Ti;
+    anti->max = max;
+    anti->min = min;
+}
+
+
+void AntiwindupCalc(Antiwindup *anti, float u, float u_sprzeg, float Ts){
+    anti->u = u;
+    anti->u_sprzeg = u_sprzeg;
+    anti->u_suma = anti->u - anti->u_sprzeg;
+
+
+    //Proporcjonalny
+    anti->y_prop = anti->u_suma * anti->Kr;
+
+    //Calkowanie
+    anti->y_int = (((Ts*anti->Kr)*(0.5*anti->oneOverTi))*anti->u_suma + ((Ts*anti->Kr)*(0.5*anti->oneOverTi))*anti->u_prev)*anti->flag + anti->y_int_prev;
+
+    //Sumowanie wyjscia
+    anti->u_sat = anti->y_prop + anti->y_int;
+
+    //Saturation
+
+    if (anti->u_sat < anti->max && anti->u_sat > anti->min){
+        anti->flag = 1;
+    }
+    else{
+        anti->flag = 0;
+    }
+
+
+    if (anti->u_sat > 0 && anti->flag == 0){
+        anti->y_sat = anti->max;
+    }
+    else if (anti->u_sat < 0 && anti->flag == 0){
+        anti->y_sat = anti->min;
+    }
+    else {
+        anti->y_sat = anti->u_sat;
+    }
+
+
+    anti->u_prev = anti->u_suma;
+    anti->y_int_prev = anti->y_int;
+
+}
+

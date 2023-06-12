@@ -1,0 +1,1126 @@
+
+**** Clean-only build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k clean 
+ 
+DEL /F  "BLDC-Parker018.hex"  "BLDC-Parker018.out" 
+DEL /F "DSP2833x_ADC_cal.obj" "PI_antiwindup.obj" "abc_2_dq.obj" "alfabeta_2_abc.obj" "dq_2_alfabeta.obj" "dq_abc.obj" "enkoder.obj" "funkcje.obj" "mainBLDC.obj" "modulator.obj" "nastawy.obj" "source\DSP280x_Spi.obj" "source\F2806x_Adc.obj" "source\F2806x_CodeStartBranch.obj" "source\F2806x_CpuTimers.obj" "source\F2806x_DefaultIsr.obj" "source\F2806x_GlobalVariableDefs.obj" "source\F2806x_Gpio.obj" "source\F2806x_MemCopy.obj" "source\F2806x_PieCtrl.obj" "source\F2806x_PieVect.obj" "source\F2806x_SysCtrl.obj" "source\F2806x_usDelay.obj" 
+DEL /F "PI_antiwindup.d" "abc_2_dq.d" "alfabeta_2_abc.d" "dq_2_alfabeta.d" "dq_abc.d" "enkoder.d" "funkcje.d" "mainBLDC.d" "modulator.d" "nastawy.d" "source\DSP280x_Spi.d" "source\F2806x_Adc.d" "source\F2806x_CpuTimers.d" "source\F2806x_DefaultIsr.d" "source\F2806x_GlobalVariableDefs.d" "source\F2806x_Gpio.d" "source\F2806x_MemCopy.d" "source\F2806x_PieCtrl.d" "source\F2806x_PieVect.d" "source\F2806x_SysCtrl.d" 
+DEL /F "DSP2833x_ADC_cal.d" "source\F2806x_CodeStartBranch.d" "source\F2806x_usDelay.d" 
+Could Not Find C:\Users\student\Desktop\01_PROJEKT_BAZOWY\BLDC-Parker018\Debug\DSP2833x_ADC_cal.d
+Could Not Find C:\Users\student\Desktop\01_PROJEKT_BAZOWY\BLDC-Parker018\Debug\source\F2806x_CodeStartBranch.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../DSP2833x_ADC_cal.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="DSP2833x_ADC_cal.d_raw"  "../DSP2833x_ADC_cal.asm"
+Finished building: "../DSP2833x_ADC_cal.asm"
+ 
+Building file: "../PI_antiwindup.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="PI_antiwindup.d_raw"  "../PI_antiwindup.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 8 of "../PI_antiwindup.c")
+Finished building: "../PI_antiwindup.c"
+ 
+Building file: "../abc_2_dq.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="abc_2_dq.d_raw"  "../abc_2_dq.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 2 of "../abc_2_dq.c")
+Finished building: "../abc_2_dq.c"
+ 
+Building file: "../alfabeta_2_abc.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="alfabeta_2_abc.d_raw"  "../alfabeta_2_abc.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 2 of "../alfabeta_2_abc.c")
+Finished building: "../alfabeta_2_abc.c"
+ 
+Building file: "../dq_2_alfabeta.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="dq_2_alfabeta.d_raw"  "../dq_2_alfabeta.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 2 of "../dq_2_alfabeta.c")
+Finished building: "../dq_2_alfabeta.c"
+ 
+Building file: "../dq_abc.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="dq_abc.d_raw"  "../dq_abc.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 2 of "../dq_abc.c")
+Finished building: "../dq_abc.c"
+ 
+Building file: "../enkoder.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="enkoder.d_raw"  "../enkoder.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 9 of "../enkoder.c")
+Finished building: "../enkoder.c"
+ 
+Building file: "../funkcje.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="funkcje.d_raw"  "../funkcje.c"
+No Assembly Errors, 1 Assembly Warning
+"C:\Users\student\AppData\Local\Temp\{B7DA5225-972D-448D-97F9-D8CC1CD9936E}", WARNING! at line 846:
+ [W0001]
+         Value out of range
+	 RPT #1000 || NOP
+ 
+Finished building: "../funkcje.c"
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building file: "../modulator.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="modulator.d_raw"  "../modulator.c"
+Finished building: "../modulator.c"
+ 
+Building file: "../nastawy.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="nastawy.d_raw"  "../nastawy.c"
+Finished building: "../nastawy.c"
+ 
+Building file: "../source/DSP280x_Spi.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="source/DSP280x_Spi.d_raw" --obj_directory="source"  "../source/DSP280x_Spi.c"
+Finished building: "../source/DSP280x_Spi.c"
+ 
+Building file: "../source/F2806x_Adc.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="source/F2806x_Adc.d_raw" --obj_directory="source"  "../source/F2806x_Adc.c"
+Finished building: "../source/F2806x_Adc.c"
+ 
+Building file: "../source/F2806x_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="source/F2806x_CodeStartBranch.d_raw" --obj_directory="source"  "../source/F2806x_CodeStartBranch.asm"
+Finished building: "../source/F2806x_CodeStartBranch.asm"
+ 
+Building file: "../source/F2806x_CpuTimers.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="source/F2806x_CpuTimers.d_raw" --obj_directory="source"  "../source/F2806x_CpuTimers.c"
+Finished building: "../source/F2806x_CpuTimers.c"
+ 
+Building file: "../source/F2806x_DefaultIsr.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="source/F2806x_DefaultIsr.d_raw" --obj_directory="source"  "../source/F2806x_DefaultIsr.c"
+Finished building: "../source/F2806x_DefaultIsr.c"
+ 
+Building file: "../source/F2806x_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="source/F2806x_GlobalVariableDefs.d_raw" --obj_directory="source"  "../source/F2806x_GlobalVariableDefs.c"
+Finished building: "../source/F2806x_GlobalVariableDefs.c"
+ 
+Building file: "../source/F2806x_Gpio.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="source/F2806x_Gpio.d_raw" --obj_directory="source"  "../source/F2806x_Gpio.c"
+Finished building: "../source/F2806x_Gpio.c"
+ 
+Building file: "../source/F2806x_MemCopy.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="source/F2806x_MemCopy.d_raw" --obj_directory="source"  "../source/F2806x_MemCopy.c"
+Finished building: "../source/F2806x_MemCopy.c"
+ 
+Building file: "../source/F2806x_PieCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="source/F2806x_PieCtrl.d_raw" --obj_directory="source"  "../source/F2806x_PieCtrl.c"
+Finished building: "../source/F2806x_PieCtrl.c"
+ 
+Building file: "../source/F2806x_PieVect.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="source/F2806x_PieVect.d_raw" --obj_directory="source"  "../source/F2806x_PieVect.c"
+Finished building: "../source/F2806x_PieVect.c"
+ 
+Building file: "../source/F2806x_SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="source/F2806x_SysCtrl.d_raw" --obj_directory="source"  "../source/F2806x_SysCtrl.c"
+Finished building: "../source/F2806x_SysCtrl.c"
+ 
+Building file: "../source/F2806x_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="source/F2806x_usDelay.d_raw" --obj_directory="source"  "../source/F2806x_usDelay.asm"
+Finished building: "../source/F2806x_usDelay.asm"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../PI_antiwindup.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="PI_antiwindup.d_raw"  "../PI_antiwindup.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 8 of "../PI_antiwindup.c")
+Finished building: "../PI_antiwindup.c"
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../PI_antiwindup.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="PI_antiwindup.d_raw"  "../PI_antiwindup.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 8 of "../PI_antiwindup.c")
+Finished building: "../PI_antiwindup.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../PI_antiwindup.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="PI_antiwindup.d_raw"  "../PI_antiwindup.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 8 of "../PI_antiwindup.c")
+Finished building: "../PI_antiwindup.c"
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../PI_antiwindup.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="PI_antiwindup.d_raw"  "../PI_antiwindup.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 8 of "../PI_antiwindup.c")
+Finished building: "../PI_antiwindup.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../mainBLDC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/Users/student/Desktop/01_PROJEKT_BAZOWY/BLDC-Parker018/include" -g --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="mainBLDC.d_raw"  "../mainBLDC.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include/sys/cdefs.h", line 798: warning #48-D: incompatible redefinition of macro "__BSD_VISIBLE" (declared at line 4 of "../mainBLDC.c")
+Finished building: "../mainBLDC.c"
+ 
+Building target: "BLDC-Parker018.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla0 --float_support=fpu32 --vcu_support=vcu0 -g --diag_warning=225 --display_error_number -z -m"BLDC-Parker018.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --display_error_number --xml_link_info="BLDC-Parker018_linkInfo.xml" --rom_model -o "BLDC-Parker018.out" "./DSP2833x_ADC_cal.obj" "./PI_antiwindup.obj" "./abc_2_dq.obj" "./alfabeta_2_abc.obj" "./dq_2_alfabeta.obj" "./dq_abc.obj" "./enkoder.obj" "./funkcje.obj" "./mainBLDC.obj" "./modulator.obj" "./nastawy.obj" "./source/DSP280x_Spi.obj" "./source/F2806x_Adc.obj" "./source/F2806x_CodeStartBranch.obj" "./source/F2806x_CpuTimers.obj" "./source/F2806x_DefaultIsr.obj" "./source/F2806x_GlobalVariableDefs.obj" "./source/F2806x_Gpio.obj" "./source/F2806x_MemCopy.obj" "./source/F2806x_PieCtrl.obj" "./source/F2806x_PieVect.obj" "./source/F2806x_SysCtrl.obj" "./source/F2806x_usDelay.obj" "../28069_RAM_lnk.cmd" "../F2806x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib 
+<Linking>
+warning #10247-D: creating output section ".adc_cal" without a SECTIONS
+   specification
+Finished building target: "BLDC-Parker018.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project BLDC-Parker018 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****

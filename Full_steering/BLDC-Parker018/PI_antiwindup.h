@@ -1,0 +1,41 @@
+/*
+ * PI_antiwindup.h
+ *
+ *  Created on: 22 maj 2023
+ *      Author: student
+ */
+
+#ifndef PI_ANTIWINDUP_H_
+#define PI_ANTIWINDUP_H_
+
+
+
+//REGULATOR PREDKOSCI I PRADU
+typedef struct PIAntiwindup{
+    float u;
+    float u_prev;
+    float u_suma;
+    float y_int;
+    float y_int_prev;
+    float y_prop;
+    float y_prop_prev;
+    float u_sat;
+    float y_sat;
+    float y;
+    float y_prev;
+    float Kr;
+    float max;
+    float min;
+    float Ti;
+    float oneOverTi;
+    int flag;
+    float u_sprzeg;
+}Antiwindup;
+
+void AntiwindupInit(Antiwindup *anti, float Kr, float Ti, float max, float min);
+
+void AntiwindupCalc(Antiwindup *anti, float u, float u_sprzeg, float Ts) ;
+
+void AntiwindupReset(Antiwindup *anti);
+
+#endif /* PI_ANTIWINDUP_H_ */
